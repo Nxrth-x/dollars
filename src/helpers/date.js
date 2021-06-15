@@ -20,7 +20,7 @@ const formatRequestDate = (date) => format(date, "MM-dd-yyyy");
 
 export const getDateInterval = () => {
   const currentDate = new Date();
-  const pastDate = addDays(currentDate, -8);
+  const pastDate = addDays(currentDate, -7);
 
   const currentDateFormatted = formatRequestDate(currentDate);
   const pastDateFormatted = formatRequestDate(pastDate);

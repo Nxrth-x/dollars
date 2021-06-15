@@ -7,13 +7,25 @@ export const Footer = () => {
         <h1 className="text-gradient">Nxrth-x</h1>
         <div className="wrapper">
           <div className="links">
-            <a href="https://github.com/Nxrth-x" target="_blank">
+            <a
+              href="https://github.com/Nxrth-x"
+              rel="noreferrer"
+              target="_blank"
+            >
               GitHub
             </a>
-            <a href="https://linkedin.com/in/lima-eder" target="_blank">
+            <a
+              href="https://linkedin.com/in/lima-eder"
+              rel="noreferrer"
+              target="_blank"
+            >
               LinkedIn
             </a>
-            <a href="https://facebook.com/dcclxxix" target="_blank">
+            <a
+              href="https://facebook.com/dcclxxix"
+              rel="noreferrer"
+              target="_blank"
+            >
               Facebook
             </a>
           </div>
@@ -21,7 +33,11 @@ export const Footer = () => {
             <span className="text-gradient">Dollar$</span> é uma aplicação que
             lhe traz as principais informações do dólar diariamente. <br />
             Gostou do projeto? Me dê uma estrela no{" "}
-            <a href="https://github.com/Nxrth-x/dolars" target="_blank">
+            <a
+              href="https://github.com/Nxrth-x/dollars"
+              rel="noreferrer"
+              target="_blank"
+            >
               GitHub.
             </a>
           </p>
@@ -62,12 +78,10 @@ const Wrapper = styled.footer`
     div.links {
       display: flex;
       flex-direction: column;
-
-      font-size: 0.9rem;
+      gap: 0.25rem;
     }
 
     p {
-      font-size: 0.9rem;
       color: var(--text-dark);
 
       span {

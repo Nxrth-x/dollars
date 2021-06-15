@@ -2,9 +2,7 @@ import styled from "styled-components";
 import { IndexChart } from "./index-chart";
 import { IndexTable } from "./index-table";
 
-export const IndexInfo = ({ periodData }) => {
-  const currentCurrency = periodData[periodData.length - 1];
-
+export const IndexInfo = ({ periodData, currentCurrency }) => {
   return (
     <Wrapper>
       <h1 className="text-gradient">Dados da última semana</h1>

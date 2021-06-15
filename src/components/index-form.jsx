@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import styled from "styled-components";
 import { handleChange } from "../helpers/ui";
 
@@ -59,7 +59,11 @@ export const IndexForm = ({ currentCurrency }) => {
           </div>
         </label>
       </form>
-      <button className="more" onClick={handleButtonClick}>
+      <button
+        className="more"
+        onClick={handleButtonClick}
+        aria-label="Ver mais"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -159,6 +163,8 @@ const Wrapper = styled.section`
 
           width: 4rem;
           height: 3.5rem;
+
+          font-size: 1.25rem;
 
           color: var(--black);
 

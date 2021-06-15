@@ -19,6 +19,24 @@
   font-family: "Poppins", sans-serif;
 }
 
+html,
+body {
+  background: linear-gradient(90deg, var(--black), var(--black-light));
+  color: var(--text);
+}
+
+body::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--green);
+}
+
 button,
 input {
   outline: none;
@@ -66,10 +84,4 @@ button {
 
 .shadow {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.25);
-}
-
-html,
-body {
-  background: linear-gradient(90deg, var(--black), var(--black-light));
-  color: var(--text);
 }

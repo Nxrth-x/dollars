@@ -12,8 +12,8 @@ export const IndexTable = ({ periodData }) => {
         </tr>
       </thead>
       <tbody>
-        {periodData.map((item, index) => (
-          <tr key={index}>
+        {periodData.map((item) => (
+          <tr key={item.date}>
             <td>USD</td>
             <td>{item.buyValue}</td>
             <td>{item.date}</td>
